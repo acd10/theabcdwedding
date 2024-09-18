@@ -1,23 +1,15 @@
 const parallax = document.getElementById("home-img-lg");
 const parallax1 = document.getElementById("parallax1");
-const parallax2 = document.getElementById("parallax2");
 
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
   parallax.style.backgroundPositionX = offset * (-0.3) - 100 + "px";
 })
 
-
-window.addEventListener("scroll", function () {
-  let offset = window.pageYOffset;
-  offset -= 3100;
-  parallax1.style.backgroundPositionY = offset * (0.1) + "px";
-})
-
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
   offset -= 4800;
-  parallax2.style.backgroundPositionY = offset * (-0.1) + "px";
+  parallax1.style.backgroundPositionY = offset * (-0.1) + "px";
 })
 
 function myFunction() {

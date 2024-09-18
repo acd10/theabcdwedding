@@ -59,26 +59,10 @@ h3 {
     opacity: 1;
 }
 
-.text {
+.text, a {
     font-family: 'Quicksand', sans-serif;
     font-size: var(--text-size);
     line-height: 1.3rem;
-}
-
-.huge-btn {
-    display: block;
-    font-size: 1rem;
-    background: transparent;
-    border: 1px solid #212121;
-    padding: 25px 50px;
-    border-radius: 50px;
-    width: fit-content;
-    margin: 30px 0;
-}
-
-.huge-btn:hover {
-    color: grey;
-    border-color: grey;
 }
 
 .v-reposition-container {
@@ -106,73 +90,9 @@ nav img {
     margin-right: 20px;
 }
 
-a:hover {
-    color: orange;
-    transition: .5s;
-}
-
-.checkbtn {
-    font-size: 30px;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
 @media (max-width:1000px) {
-    label.logo {
-        font-size: 20px;
-    }
-
-    nav ul li a {
-        font-size: 10px;
-    }
-
     html {
         font-size: 10px;
-    }
-}
-
-@media (max-width:570px) {
-    .checkbtn {
-        display: block;
-    }
-
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        backdrop-filter: blur(5px);
-        top: 80px;
-        font-weight: bold;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav li ul a {
-        font-size: 20px;
-    }
-
-    a:hover,
-    a.active {
-        background: none;
-        color: grey;
-    }
-
-    #check:checked~ul {
-        left: 0;
     }
 }
 
@@ -277,45 +197,10 @@ a:hover {
 
 /* <===================STORY===================> */
 
-#story {
-    padding-top: 10vh;
-    display: flex;
-    flex-direction: row;
-    margin: 10vh 0;
-}
-
-#story h3 {
-    width: 40vw;
-}
-
-#story p {
-    width: 40vw;
-    text-align: justify;
-    font-size: var(--h3-size);
-    line-height: var(--h3-size);
-}
-
 @media (max-width:1000px) {
     .h-reposition-container {
         position: relative;
         top: 0;
-    }
-
-    #story {
-        flex-direction: column;
-    }
-
-    #story h3 {
-        width: 100%;
-        margin: 5px 0;
-        font-size: var(--h3-size);
-    }
-
-    #story p {
-        width: 100%;
-        margin: 5px 0;
-        font-size: var(--text-size);
-        line-height: var(--text-size);
     }
 }
 
@@ -369,23 +254,6 @@ a:hover {
 }
 
 /* <===================SOCIALS===================> */
-.socials {
-    margin: 5vh 0;
-}
-
-.socials h2 {
-    width: 60vw;
-    font-size: 5rem;
-    text-align: center;
-    margin: auto;
-}
-
-.socials h3 {
-    width: 60vw;
-    font-size: 2rem;
-    text-align: center;
-    margin: auto;
-}
 
 .hashtag {
     text-align: center;
@@ -393,80 +261,25 @@ a:hover {
     font-size: 3rem;
 }
 
-@media (max-width:1570px) {
-    .socials h2 {
-        font-size: 2rem;
-        line-height: 2rem;
-    }
-}
-
-/* <===================HANDS===================> */
-
-.hands {
-    height: 120vh;
-    width: 100%;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/IMG_20211206_143856__02.jpg?alt=media&token=3075de1a-fc70-4fa6-a864-c532618220d7);
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-/* <===================STAY===================> */
-#stay {
-    background-color: var(--grey-color);
-    padding: 10vh var(--horizontal-margin-spacing);
-    width: 100%;
-}
-
-.stay-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 20vh 0;
-}
-
-.stay-item .text {
-    margin: 20px 0;
-}
-
-.links {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-@media (max-width:1000px) {
-    .stay-container {
-        flex-direction: column;
-        margin: 10px 0;
-    }
-
-    .stay-item {
-        margin: 2vh 0;
-    }
-}
-
-/* <===================REGISTRY===================> */
-
-#registry {
+#socials {
     padding: 20vh var(--horizontal-margin-spacing) 0 var(--horizontal-margin-spacing);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.registry-container {
+.socials-container {
     display: block;
     text-align: center;
     width: 30vw;
 }
 
-.registry-container .text {
+.socials-container .text {
     text-align: center;
     margin: 20px 0;
 }
 
-.registry-img {
+.socials-img {
     display: block;
     height: 100vh;
     width: 40vw;
@@ -477,39 +290,35 @@ a:hover {
     /* background-attachment: fixed; */
 }
 
-.registry-img-sm {
+.socials-img-sm {
     display: none;
 }
 
-.registry-img-lg {
+.socials-img-lg {
     display: block;
 }
 
 @media (max-width:1000px) {
-    #registry {
+    #socials {
         flex-direction: column;
     }
 
-    .registry-img {
+    .socials-img {
         width: 100%;
         height: 50vh;
     }
 
-    .registry-img-sm {
+    .socials-img-sm {
         margin-top: 10vh;
         display: block;
     }
 
-    .registry-img-lg {
+    .socials-img-lg {
         display: none;
     }
 
-    .registry-container {
+    .socials-container {
         width: 100%;
-    }
-
-    #registry button {
-        margin-inline: auto;
     }
 }
 
