@@ -270,12 +270,6 @@ nav img {
 
 /* <===================SOCIALS===================> */
 
-.hashtag {
-    text-align: center;
-    margin: 20px 0 10vh 0;
-    font-size: 3rem;
-}
-
 #socials {
     padding: 20vh var(--horizontal-margin-spacing) 0 var(--horizontal-margin-spacing);
     display: flex;
@@ -292,6 +286,12 @@ nav img {
 .socials-container .text {
     text-align: center;
     margin: 20px 0;
+}
+
+.socials-container .hashtag {
+    text-align: center;
+    margin: 20px 0 10vh 0;
+    font-size: 3rem;
 }
 
 .socials-img {
