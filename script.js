@@ -1,6 +1,6 @@
 const parallax = document.getElementById("home-img-lg");
 const parallax1 = document.getElementById("parallax1");
-const message = "Hi there, I will be attending your wedding event on 16th, 17th and 24th of November";
+const message = "I've cleared my calendars. I can't wait to be there!!";
 let encoded = encodeURIComponent(message);
 
 window.addEventListener("scroll", function () {
