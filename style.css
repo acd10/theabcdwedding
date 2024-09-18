@@ -65,6 +65,21 @@ h3 {
     line-height: 1.3rem;
 }
 
+.huge-btn{
+    display: block;
+    font-size: 1rem;
+    background: transparent;
+    border: 1px solid #212121;
+    padding: 25px 50px;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 30px 0;
+}
+.huge-btn:hover{
+    color: grey;
+    border-color: grey;
+}
+
 .v-reposition-container {
     position: absolute;
     left: 0;
@@ -332,6 +347,10 @@ nav img {
 .parting-message h3{
     margin: 10vh auto;
     text-align: center;
+}
+
+.parting-message button{
+    margin:  10vh auto;
 }
 
 /* <===================FOOTER===================> */
