@@ -1,7 +1,6 @@
 const parallax = document.getElementById("home-img-lg");
 const parallax1 = document.getElementById("parallax1");
-const message = "Pumped to be at your wedding! I've cleared my calendars, can't wait to be there!!";
-let encoded = encodeURIComponent(message);
+const url = 'https://forms.gle/L9uLQ1naGtaWzBfD7';
 
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
@@ -41,7 +40,6 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 function handleRsvpClick() {
-  const url = `https://wa.me/919448322908?text=${encoded}`;
   window.open(url, '_blank');
 }
 const rsvpButton = document.querySelector('.huge-btn');
