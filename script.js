@@ -1,16 +1,9 @@
 const parallax = document.getElementById("home-img-lg");
-const parallax1 = document.getElementById("parallax1");
 const url = 'https://forms.gle/L9uLQ1naGtaWzBfD7';
 
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
   parallax.style.backgroundPositionX = offset * (-0.3) - 100 + "px";
-})
-
-window.addEventListener("scroll", function () {
-  let offset = window.pageYOffset;
-  offset -= 4800;
-  parallax1.style.backgroundPositionY = offset * (-0.1) + "px";
 })
 
 function myFunction() {
