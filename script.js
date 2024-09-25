@@ -9,7 +9,7 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
-  offset -= 7000;
+  offset -= 6500;
   parallax1.style.backgroundPositionY = offset * (-0.1) + "px";
 })
 
@@ -42,5 +42,3 @@ window.addEventListener("scroll", reveal);
 function handleRsvpClick() {
   window.open(url, '_blank');
 }
-const rsvpButton = document.querySelector('.huge-btn');
-rsvpButton.addEventListener('click', handleRsvpClick);

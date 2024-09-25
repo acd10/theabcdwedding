@@ -68,7 +68,7 @@ a {
 
 .huge-btn {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background: transparent;
     border: 1px solid #212121;
     padding: 25px 50px;
@@ -82,6 +82,13 @@ a {
     border-color: grey;
 }
 
+@media (max-width:1000px) {
+    .huge-btn {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+}
+
 .v-reposition-container {
     position: absolute;
     left: 0;
@@ -91,7 +98,7 @@ a {
 .h-reposition-container {
     width: 100vw;
     position: relative;
-    top: 100vh;
+    top: 110vh;
 }
 
 /* <===================NAVBAR===================> */
@@ -171,6 +178,7 @@ nav img {
     width: 100%;
     backdrop-filter: blur(4px);
     padding: 8vh var(--horizontal-margin-spacing);
+    z-index: 1;
 }
 
 .timeline-container {
@@ -248,17 +256,17 @@ nav img {
 }
 
 .gallery-img:nth-child(1) {
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL1.jpg?alt=media&token=1a273cdd-98fe-408f-9c31-d2ce7f545844);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL2.jpg?alt=media&token=c6776876-a107-4d3a-9cc4-533dd87ebd19);
     background-position-x: right;
 }
 
 .gallery-img:nth-child(3) {
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL3.jpg?alt=media&token=caf16201-2f84-4305-9691-dec472c66246);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL3_2.jpg?alt=media&token=3506115e-88d8-47e1-b469-7e5d21d6c690);
 }
 
 .gallery-img:nth-child(2) {
     background-position-y: top;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL2.jpg?alt=media&token=c6776876-a107-4d3a-9cc4-533dd87ebd19);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL1.jpg?alt=media&token=1a273cdd-98fe-408f-9c31-d2ce7f545844);
 }
 
 @media (max-width:1000px) {
@@ -282,25 +290,21 @@ nav img {
 .gallery-img-1 {
     height: 100vh;
     width: 100%;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL1.jpg?alt=media&token=1a273cdd-98fe-408f-9c31-d2ce7f545844);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL2.jpg?alt=media&token=c6776876-a107-4d3a-9cc4-533dd87ebd19);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100vh;
     background-position: center;
     display: table;
     background-attachment: fixed;
-
-    background-position: center;
 }
 
 .gallery-img-2 {
     height: 100vh;
     width: 100%;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL2.jpg?alt=media&token=c6776876-a107-4d3a-9cc4-533dd87ebd19);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL1.jpg?alt=media&token=1a273cdd-98fe-408f-9c31-d2ce7f545844);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
     display: table;
     background-attachment: fixed;
 }
@@ -308,10 +312,9 @@ nav img {
 .gallery-img-3 {
     height: 100vh;
     width: 100%;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL3.jpg?alt=media&token=caf16201-2f84-4305-9691-dec472c66246);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL3_2.jpg?alt=media&token=3506115e-88d8-47e1-b469-7e5d21d6c690);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100vh;
     display: table;
     background-attachment: fixed;
     background-position: center;
@@ -324,9 +327,11 @@ nav img {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
-/* <===================QUOTE===================> */
+/* <===================SOCIALS===================> */
 .socials {
     margin: 50vh 0;
 }
@@ -374,7 +379,7 @@ nav img {
     position: relative;
 }
 
-@media (max-width:1570px){
+@media (max-width:1570px) {
     .cover {
         background-size: contain;
     }
