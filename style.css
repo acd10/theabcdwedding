@@ -92,11 +92,11 @@ a {
 .v-reposition-container {
     position: absolute;
     left: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 .h-reposition-container {
-    width: 100vw;
+    width: 100%;
     position: relative;
     top: 110vh;
 }
@@ -240,9 +240,9 @@ nav img {
 
 /* <===================GALLERY===================> */
 
-/* .gallery {
+.gallery {
     display: flex;
-    padding: 20vh 0;
+    /* padding: 10vh 0; */
     justify-content: center;
     align-items: center;
 }
@@ -256,12 +256,12 @@ nav img {
 }
 
 .gallery-img:nth-child(1) {
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL2.jpg?alt=media&token=c6776876-a107-4d3a-9cc4-533dd87ebd19);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL2_2.jpg?alt=media&token=9b8b7603-9c90-4112-8c24-2d8cdeb87f2c);
     background-position-x: right;
 }
 
 .gallery-img:nth-child(3) {
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL3_2.jpg?alt=media&token=3506115e-88d8-47e1-b469-7e5d21d6c690);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/GAL3_2_1.jpg?alt=media&token=a1ba727f-3264-48e2-a649-5bb014a20ece);
 }
 
 .gallery-img:nth-child(2) {
@@ -285,8 +285,9 @@ nav img {
         position: relative;
         left: -(var(--horizontal-margin-spacing));
     }
-} */
+}
 
+/* 
 .gallery-img-1 {
     height: 100vh;
     width: 100%;
@@ -322,18 +323,19 @@ nav img {
 
 .parallax-text {
     color: white;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin: 0px;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
     text-shadow: 1px 1px 10px black;
     -webkit-text-stroke-width: 1.5px white;
-}
+} */
+
 
 /* <===================SOCIALS===================> */
 .socials {
-    margin: 50vh 0;
+    margin: 30vh 0;
 }
 
 .socials h3 {
@@ -354,9 +356,9 @@ nav img {
     font-size: 3rem;
 }
 
-@media (max-width:1570px) {
+@media (max-width:1000px) {
     .socials {
-        margin: 25vh 0;
+        margin-top: 30vh;
     }
 
     .socials h3 {
@@ -371,18 +373,11 @@ nav img {
     height: 100vh;
     width: 100%;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/weddinginvite-171124.appspot.com/o/COVER.jpg?alt=media&token=642d6bee-0dd3-4e0f-9d96-e1bd5d99341b);
-    object-fit: cover;
     background-size: cover;
     background-position-y: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
-}
-
-@media (max-width:1570px) {
-    .cover {
-        background-size: contain;
-    }
 }
 
 /* <===================PARTING MESSAGE===================> */
@@ -391,13 +386,16 @@ nav img {
     text-align: center;
 }
 
-.parting-message h3 {
-    margin: 10vh auto;
-    text-align: center;
-}
-
 .parting-message button {
     margin: 10vh auto;
+}
+
+@media (max-width:1000px) {
+    .cover {
+        height: 50vh;
+        background-size: contain;
+        background-attachment: scroll;
+    }
 }
 
 /* <===================FOOTER===================> */
